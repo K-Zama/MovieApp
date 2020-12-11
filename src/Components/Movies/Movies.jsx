@@ -15,9 +15,11 @@ const Movies = (props) => {
     },[movieType]);
 
     return(
-        <div className="col">
-            {movies.map(movie => <Movie movie={movie} key={movie.title}/>)}
-        </div>
+        <main className="container">
+            <div className="row">
+                {movies.map(movie => <Movie movie={movie} key={movie.title}/>)}
+            </div>
+        </main>
     )
 }
 
