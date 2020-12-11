@@ -4,17 +4,12 @@ import { useSelector } from 'react-redux';
 const MovieResult = () => {
 
     const searchMovieReducer = useSelector((state) => state.searchMovieReducer);
-    console.log(searchMovieReducer.movie[0].title);
-
-
+    searchMovieReducer.movie.ttitle(movie => console.log(movie.title));
 
     return(
         <div>
             {searchMovieReducer.loading && <div>Buscando...</div>}
-            {
-                searchMovieReducer.movie.lenght >= 1 && 
-                <h3>{searchMovieReducer.movie[0].title}</h3>
-            }
+            {searchMovieReducer.movie.lenght >= 1 && searchMovieReducer.movie.map(movie => <h3>{movie.title}</h3>)}
             {searchMovieReducer.error !== '' && <span className="text-danger">{searchMovieReducer.error}</span>}
         </div>
     )

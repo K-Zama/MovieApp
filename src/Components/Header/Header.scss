@@ -1,0 +1,22 @@
+header {
+    color: #fff;
+    margin-bottom: 1.5em;
+    background-color: #133b5c;
+    padding: 1em;
+    span {
+        padding: 2.5em;
+        margin: 0;
+        cursor: pointer;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 100;
+        text-transform: uppercase;
+    }
+    span:hover {
+        background: #3596bd;
+    }
+    img {
+        width: 3.5em;
+        height: 4em;
+    }
+}

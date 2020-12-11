@@ -1,12 +1,16 @@
 // React-Router-Dom
 import {NavLink} from 'react-router-dom';
+import Movie from '../../img/movie-roll.png';
+import './Header.scss';
+
+
 
 const Header = () => {
     return (
         <header className="container">
             <div className="row">
-                <div className="col">
-                    <NavLink to="/">Home</NavLink>
+                <div className="col d-flex justify-content-between align-items-center">
+                    <NavLink to="/"><img src={Movie} alt="logo"/></NavLink>
                     <NavLink to="/popular">
                         <span className="populares">Películas más populares</span>
                     </NavLink>
