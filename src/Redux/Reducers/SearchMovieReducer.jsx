@@ -11,7 +11,8 @@ const searchMovieReducer = (state = initialState, action) => {
         case SEARCH_MOVIE_REQUEST: 
             return {
                 ...state,
-                loading: true
+                loading: true,
+                movie: action.payload
             }
         case SEARCH_MOVIE_SUCCESS:
             return {

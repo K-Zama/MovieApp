@@ -4,9 +4,10 @@ export const SEARCH_MOVIE_FAIL = "SEARCH_MOVIE_FAIL";
 
 const searchMovieRequest = () => {
     return({
-        type: SEARCH_MOVIE_REQUEST
-    })
-}
+        type: SEARCH_MOVIE_REQUEST,
+        payload: []
+    });
+};
 
 const searchMovieSuccess = (movie) => {
     return({
