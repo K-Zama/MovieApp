@@ -38,9 +38,7 @@ function App() {
             </div>
           </div>
           <div className="row">
-            <div className="col">
               <MovieResult/>
-            </div>
           </div>
         </Provider>
         </div>

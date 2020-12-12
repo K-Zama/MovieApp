@@ -1,8 +1,24 @@
-.movie>img {
-    cursor: pointer;
-}
-
-.movie>h4 {
-    font-weight: 100px;
-    font-size: 1em;
+.movie {
+    border: 1px solid #99a8b2;
+    border-radius: 1em;
+    background-color: #99a8b2;
+    padding: 1.5em;
+    margin: 0.5em;
+    h6 {
+        margin-top: 0.5em;
+    }
+    h4 {
+        font-weight: 100px;
+        font-size: 1em;
+    }
+    img {
+        max-width: 200px;
+    }
+    .vote {
+        background: #e6d5b8;
+        color: rgb(13, 20, 53);
+        font-weight: 400;
+        border-radius: 2em;
+        padding: 1em;
+    }
 }
